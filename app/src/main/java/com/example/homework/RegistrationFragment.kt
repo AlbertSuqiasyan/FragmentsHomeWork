@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.fragment_registration.view.*
 class RegistrationFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,savedInstanceState: Bundle?): View? {
-       val binding = DataBindingUtil.inflate<FragmentRegistrationBinding>(inflater,R.layout.fragment_registration,false)
+       val binding = DataBindingUtil.inflate<FragmentRegistrationBinding>(inflater,R.layout.fragment_registration,container,false)
         binding.loginButton.setOnClickListener(view: View -> view.findNavController().navigate(R.id.))
         return binding.root
     }
